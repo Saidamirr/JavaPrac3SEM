@@ -45,7 +45,7 @@
 
 <tbody>
 <tr>
-<td class="org-right">4<sub>1</sub></td>
+<td class="org-right">4_1</td>
 <td class="org-left">4 таска выполнить</td>
 </tr>
 </tbody>
