@@ -32,7 +32,7 @@
 <tbody>
 <tr>
 <td class="org-right">3</td>
-<td class="org-left">Готово</td>
+<td class="org-left">НЕ ГОТОВО</td>
 </tr>
 </tbody>
 
