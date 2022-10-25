@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class CalcUI extends JFrame {
-    JButton pnl[] = new JButton[16];
+    JButton pnl[] = new JButton[17];
     GridBagConstraints cnstr = new GridBagConstraints();
     JLabel textLabel = new JLabel();
     String outText = "";
@@ -13,16 +13,17 @@ public class CalcUI extends JFrame {
         setLayout(new GridBagLayout());
         setSize(500, 500);
         cnstr.fill = GridBagConstraints.BOTH;
-        cnstr.weightx = 0.1;
-        cnstr.weighty = 0.1;
-        textLabel.setBackground(Color.CYAN);
+        cnstr.weightx = 1;
+        cnstr.weighty = 1;
+        textLabel.setBackground(Color.CYAN);    //Setting text appearance
         textLabel.setOpaque(true);
         cnstr.gridx = 0;
         cnstr.gridy = 0;
-        cnstr.gridwidth = 4;
+        cnstr.gridwidth = 3;
         add(textLabel, cnstr);
         cnstr.gridwidth = 1;
-        for(int i = 1; i < 4; i++){
+
+        for(int i = 1; i < 4; i++){     //Creating buttons from 1 to 9
             for(int n = 0; n < 3; n++) {
                 pnl[(i - 1) * 4 + n] = new JButton(Integer.toString((3 - i) * 3 + n + 1));
                 cnstr.gridx = n;
@@ -31,6 +32,7 @@ public class CalcUI extends JFrame {
             }
         }
 
+        //Creating the rest of buttons
         pnl[3] = new JButton("/");
         cnstr.gridx = 3;
         cnstr.gridy = 1;
@@ -60,24 +62,24 @@ public class CalcUI extends JFrame {
         cnstr.gridx = 2;
         add(pnl[14], cnstr);
 
+        pnl[16] = new JButton("_");
+        cnstr.gridx = 3;
+        cnstr.gridy = 0;
+        add(pnl[16], cnstr);
+
+        //Adding listener to the buttons
         for (JButton button: pnl) {
             button.addActionListener(new ButtonL(this, calculator));
         }
         setVisible(true);
     }
-    public void addDisplay(String text){
-        System.out.println(textLabel.getText() + ' ' + text);
-        if(textLabel.getText() == "Невозможно выполнить операцию с одним числом ") {
-            display("");
-        }
-        else{
-            outText += text + ' ';
-            textLabel.setText(outText);
-        }
+    public void addDisplay(String text){    //Adding text to the end of the existing one
+        outText += text;
+        textLabel.setText(outText);
     }
-    public void display(String text){textLabel.setText(text + ' ');}
-    public void setDisplayText(String text){
-        outText = text + ' ';
+    public void display(String text){textLabel.setText(text);}  //Temporarily replacing showing text
+    public void setDisplayText(String text){    //Permanently replacing showing text
+        outText = text;
         display(outText);
     }
 }
