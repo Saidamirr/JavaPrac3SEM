@@ -7,14 +7,14 @@ public class CalcUI extends JFrame {
     JButton pnl[] = new JButton[16];
     GridBagConstraints cnstr = new GridBagConstraints();
     JLabel textLabel = new JLabel();
-    String text = new String("0");
+    String outText = "";
+    Calculator calculator = new Calculator(this);
     public CalcUI(){
         setLayout(new GridBagLayout());
         setSize(500, 500);
         cnstr.fill = GridBagConstraints.BOTH;
         cnstr.weightx = 0.1;
         cnstr.weighty = 0.1;
-        textLabel.setText(text);
         textLabel.setBackground(Color.CYAN);
         textLabel.setOpaque(true);
         cnstr.gridx = 0;
@@ -60,6 +60,24 @@ public class CalcUI extends JFrame {
         cnstr.gridx = 2;
         add(pnl[14], cnstr);
 
+        for (JButton button: pnl) {
+            button.addActionListener(new ButtonL(this, calculator));
+        }
         setVisible(true);
+    }
+    public void addDisplay(String text){
+        System.out.println(textLabel.getText() + ' ' + text);
+        if(textLabel.getText() == "Невозможно выполнить операцию с одним числом ") {
+            display("");
+        }
+        else{
+            outText += text + ' ';
+            textLabel.setText(outText);
+        }
+    }
+    public void display(String text){textLabel.setText(text + ' ');}
+    public void setDisplayText(String text){
+        outText = text + ' ';
+        display(outText);
     }
 }

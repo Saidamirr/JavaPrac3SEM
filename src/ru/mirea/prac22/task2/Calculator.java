@@ -4,36 +4,50 @@ import java.util.Stack;
 
 public class Calculator {
     Stack<Float> num = new Stack<>();
+    CalcUI calcUI;
 
-    void add(Object addition){
-        if(addition.getClass().getName() == "java.lang.Float"){
-            num.push((float)addition);
+    public Calculator(CalcUI calcUI){
+        this.calcUI = calcUI;
+    }
+    void add(Character addition){
+        if('0' <= addition && addition <= '9'){
+            num.push((float)(addition - '0'));
+            calcUI.addDisplay(String.valueOf(addition));
         }
-        else if(!num.isEmpty()){
+        else if(num.size() >= 2){
             float b = num.pop();
             float a = num.pop();
-            switch ((char)addition){
+            switch (addition){
                 case '*':
                     num.push(a * b);
+                    calcUI.addDisplay("*");
                     break;
                 case '/':
                     num.push(a / b);
+                    calcUI.addDisplay("/");
                     break;
                 case '+':
                     num.push(a + b);
+                    calcUI.addDisplay("+");
                     break;
                 case '-':
                     num.push(a - b);
+                    calcUI.addDisplay("-");
                     break;
                 default:
-                    System.out.println("Неверно заданная операция");
+                    calcUI.display("Неверно заданная операция");
             }
         }
-        else{
-            System.out.println("Невозможно выполнить операцию с одним числом");
+        else if(addition == '='){
+            String displayNum = num.peek().toString();
+            if(num.peek() % 1.0 == 0) {
+                displayNum = displayNum.replace(".0", "");
+            }
+            calcUI.setDisplayText(displayNum);
+            System.out.println("Result = " + displayNum);
         }
-    }
-    float check(){
-        return num.peek();
+        else{
+            calcUI.display("Невозможно выполнить операцию с одним числом");
+        }
     }
 }
