@@ -1,4 +1,4 @@
-package ru.mirea.prac14;
+package ru.mirea.prac14.task4;
 
 import java.util.regex.Pattern;
 

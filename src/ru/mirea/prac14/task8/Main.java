@@ -1,4 +1,4 @@
-package prac14.task8;
+package ru.mirea.prac14.task8;
 
 import java.util.Arrays;
 
@@ -17,11 +17,11 @@ public class Main{
     }
 
     public static void main(String[] args) {
-        String array[] = new String[]{"error", "41234", "2453", "23424", "error"}; //РАНДОМНЫЙ МАССИВ
+        String array[] = new String[]{"qpweor", "1234", "5463", "8575", "qpweor"};
         String[] newArray = (String[]) filter(array, new Filter() {
             @Override
             public boolean apply(Object o) {
-                String regex = "error"; //ТУТ УКАЖИТЕ ПАРАМЕТР ДЛЯ ФИЛЬТРА, В ДАННОМ СЛУЧАЕ ЭТО СТРОКА error
+                String regex = "qpweor";
                 return o != regex;
             }
         });
