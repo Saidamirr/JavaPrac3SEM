@@ -18,63 +18,63 @@
 <tbody>
 <tr>
 <td class="org-right">1</td>
-<td class="org-left">Готово</td>
+<td class="org-left">СДАТЬ СТАРЫЕ ПРЕПОДУ</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">2</td>
-<td class="org-left">Готово</td>
+<td class="org-left">СДАТЬ СТАРЫЕ ПРЕПОДУ</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">3</td>
-<td class="org-left">НЕ ГОТОВО</td>
+<td class="org-left">СДАТЬ СТАРЫЕ ПРЕПОДУ</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">4</td>
-<td class="org-left">3 таска выполнить</td>
+<td class="org-left">СДАТЬ СТАРЫЕ ПРЕПОДУ</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">4_1</td>
-<td class="org-left">4 таска выполнить</td>
+<td class="org-left">СДАТЬ СТАРЫЕ ПРЕПОДУ</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">5</td>
-<td class="org-left">Готово</td>
+<td class="org-left">СДАТЬ СТАРЫЕ ПРЕПОДУ</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">6</td>
-<td class="org-left">5 таска выполнить</td>
+<td class="org-left">СДАТЬ СТАРЫЕ ПРЕПОДУ</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">7</td>
-<td class="org-left">6 таска выполнить</td>
+<td class="org-left">СДАТЬ СТАРЫЕ ПРЕПОДУ</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">8</td>
-<td class="org-left">Готово</td>
+<td class="org-left">СДАТЬ СТАРЫЕ ПРЕПОДУ</td>
 </tr>
 </tbody>
 
@@ -116,7 +116,7 @@
 <tbody>
 <tr>
 <td class="org-right">14</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
@@ -130,7 +130,7 @@
 <tbody>
 <tr>
 <td class="org-right">16</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
@@ -151,28 +151,28 @@
 <tbody>
 <tr>
 <td class="org-right">19</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">20</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">21</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">22</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
